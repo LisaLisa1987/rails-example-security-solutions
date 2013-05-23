@@ -2,6 +2,12 @@
 
 This App will help you learn about Rails and Security.
 
+This version (rails-example-security-solutions) contains the
+solutions, look at https://github.com/web-engineering/rails-example-security
+for the original challenge.
+
+[![Build Status](https://travis-ci.org/web-engineering/rails-example-security-solutions.png?branch=master)](https://travis-ci.org/web-engineering/rails-example-security-solutions)
+
 ## Installation
 
 Two files are not available via the git repository,
