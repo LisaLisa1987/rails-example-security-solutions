@@ -49,4 +49,13 @@ describe "Sign Up and Log In", :type => :feature do
     expect(page).to have_link( "Edit",                    :href => edit_article_path(@a) )
   end
 
+  it "user cant see password" do
+    visit "/"
+    click_link "Sign up"
+    fill_in "Name",     :with => user_data[:name]
+    fill_in "Email",    :with => user_data[:email]
+    fill_in "Password", :with => user_data[:password]
+    expect(page).to have_field('Password', :type => "password") #schaut ob html field text oder password ist 
+  end
+
 end

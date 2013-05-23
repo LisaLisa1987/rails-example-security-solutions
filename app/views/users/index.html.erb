@@ -9,7 +9,6 @@
     <th>Name</th>
     <th>Email</th>
     <th>Homepage</th>
-    <th>Password</th>
     <th>Admin</th>
     <th></th>
   </tr>
@@ -19,7 +18,6 @@
     <td><%= user.name %></td>
     <td><%= user.email %></td>
     <td><%= link_unless_blank("Homepage", user.homepage) %></td>
-    <td><%= user.password %></td>
     <td><%= user.admin? %></td>
     <% if current_user and ( current_user.admin? or user.id == current_user.id ) then %>
       <td><%= link_to 'Show', user %></td>
