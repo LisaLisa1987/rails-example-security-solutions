@@ -2,10 +2,9 @@
 <p>A simple blogging App for many users who want to blog together.
 <br><i>in reality: just a sample app to learn about security in rails </i></p>
 
-
 <% @articles.each do |article| %>
   <h2><%= article.title %></h2>
-  <%= raw article.description %>
+  <%= article.description %>
 <% end %>
 
 
